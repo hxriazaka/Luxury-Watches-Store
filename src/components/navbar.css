@@ -1,0 +1,57 @@
+.navbar-nav p{
+    margin: 0 25px;
+    color: black;
+    font-size: 17px;
+    margin-top: 15px;
+    border: 2px solid whitesmoke;
+}
+a{
+    text-decoration: none;
+}
+.navbar-nav p:hover{
+    color: black;
+    border-bottom: 2px solid black;
+}
+.navbar{
+    background-color: whitesmoke;
+    width: 100%;
+}
+.navbar{
+    height: 13vh;
+}
+.navbar-brand {
+    font-size: 30px;
+    color: black;
+}
+.navbar-brand:hover{
+    color: black;
+}
+p{
+    color: transparent;
+}
+p:hover{
+    color: transparent;
+}
+.shopingicon {
+    margin: 50px;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar-toggler{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+/*--------------responsive--------------*/
+
+@media (max-width: 993px){
+    .navbar{
+        height: auto;
+    }
+    .navbar-nav a{
+        width: 75px;
+
+    }
+}

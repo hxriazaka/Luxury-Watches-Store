@@ -1,0 +1,125 @@
+.home{
+    height: 100%;
+    background-color: white;
+}
+.bg{
+    height: 100vh;
+    background-position: center;
+    background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40)),url(../images/bg-7.jpg);
+    width: 100%;
+    background-size: cover;
+}
+.c1{
+    padding-top: 20%;
+    padding-left: 100px;
+}
+.bg h1{
+    z-index: 100;
+    color: white;
+    font-size: 90px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+.bg h4{
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+}
+.bg button{
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    border-radius: 25px;
+    margin-top: 40px;
+    padding: 10px 20px;
+}
+.bg button:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+.img{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.img:hover{
+    transform: scale(1.03);
+    transition: 0.2s;
+}
+.products{
+    margin-top: 50px;
+}
+.loading{
+    color: black;
+}
+.product-card{
+    background-color: transparent;
+    margin: 15px;
+    width: 300px;
+    padding: 20px;
+    cursor: pointer;
+}
+.product h6{
+    margin-top: 20px;
+    width: 220px;
+    color: rgb(78, 78, 78);
+}
+.products small{
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+}
+.product-card a{
+    text-decoration: none;
+}
+
+.c2{
+    height: 200vh;
+}
+.product{
+    display: flex;
+}
+
+/*---------------responsive-----------*/
+@media (max-width: 993px){
+    .c1{
+        padding-top: 25%;
+        padding-left: 50px;
+    }
+    .bg h1{
+        font-size: 75px;
+    }
+    .product{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media (max-width: 780px){
+    .product{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 730px){
+    .bg h1{
+        font-size: 65px;
+    }
+    .c1{
+        padding-top: 35%;
+        padding-left: 50px;
+    }
+
+}
+@media (max-width: 650px){
+    .bg h1{
+        font-size: 43px;
+    }
+    .c1{
+        padding-top: 44%;
+        padding-left: 25px;
+    }
+
+}
+
+
+
