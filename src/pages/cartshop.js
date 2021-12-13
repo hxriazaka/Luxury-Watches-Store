@@ -9,8 +9,9 @@ const CartShop = () => {
     const history = useHistory();
 
     return ( 
-        <div className="cart row ">
-                <div className="cart-shop1 col-md-6 container">
+        <div>
+        <div className="row cart">
+        <div className="cart-shop1 col-md-6 container">
                     {items.map( item =>(
                         <div key={item.id} className='item'>
                             <h4 className='v2'>{item.title}</h4>
@@ -27,6 +28,7 @@ const CartShop = () => {
                         <h1>Total : {cart.cartTotal} $</h1>
                         <button onClick={() => history.push('/checkout')}>Checkout</button>
                 </div>
+        </div>
         </div>
      );
 }

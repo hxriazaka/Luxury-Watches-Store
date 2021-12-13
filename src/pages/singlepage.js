@@ -13,13 +13,13 @@ const SinglePage = () => {
     const {addToCart} = useContext(CartContext);
 
 
-    if (loading) return <h1 className='loading d-flex justify-content-center'>Loading... <Loader type="TailSpin" color="black" height={70} width={80}/></h1>
+    if (loading) return <h1 className='loading d-flex justify-content-center'>Please wait for fetch Data...<Loader type="TailSpin" color="white" height={70} width={80}/></h1>
     if (error) return <h1 className='loading'>Error!!!! :(</h1>
     
 
     return (
         <div className="singlepage">
-            <div className="container">
+            <div className="container sg-c">
                 <div className="row singlepage-card" >
                         <div className="col-lg-6">
                             <img src={data.image[0].name} alt="" className='singlepage-img img-fliud'/>

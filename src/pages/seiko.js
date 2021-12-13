@@ -7,7 +7,7 @@ import Loader from "react-loader-spinner";
 const Seiko = () => {
     const { loading, error, data} = useFetch('https://luxury-watches-store.herokuapp.com/products?title_contains=seiko')
 
-    if (loading) return <h1 className='loading d-flex justify-content-center'>Loading... <Loader type="TailSpin" color="black" height={70} width={80}/></h1>
+    if (loading) return <h1 className='loading d-flex justify-content-center'>Please wait for fetch Data... <Loader type="TailSpin" color="black" height={70} width={80}/></h1>
     if (error) return <h1 className='loading'>Error!!!! :(</h1>
 
 
